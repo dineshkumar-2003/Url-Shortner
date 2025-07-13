@@ -3,11 +3,11 @@
 
 ## URL Shortener
 
-### 🛠 Setup Instructions
+###  Setup Instructions
 
 ---
 
-#### 🔙 Backend (Django)
+####  Backend (Django)
 
 ```bash
 cd backend
@@ -19,7 +19,7 @@ python manage.py migrate
 python manage.py runserver 0.0.0.0:8000
 ```
 
-> 🧠 Tip: If you’re testing on a physical device, your Django backend must be accessible via your **local IP**. Find it using:
+>  Tip: If you’re testing on a physical device, your Django backend must be accessible via your **local IP**. Find it using:
 ```bash
 ipconfig  # Windows
 ifconfig  # macOS/Linux
@@ -29,7 +29,7 @@ Look for the IP under your Wi-Fi adapter. It usually looks like `192.168.x.x`.
 
 ---
 
-#### 📱 Frontend (React Native with Expo)
+####  Frontend (React Native with Expo)
 
 ```bash
 cd frontend/frontend
@@ -42,7 +42,7 @@ npm start
 
 ---
 
-### ⚠️ React Native Backend IP Configuration
+###  React Native Backend IP Configuration
 
 By default, the React Native app uses a hardcoded API endpoint like:
 
@@ -54,11 +54,10 @@ You must replace `192.168.85.13` with your own IP (found via `ipconfig`) where t
 
 This step is required for the mobile app to communicate with the backend.
 
-> 🔧 Optional: Move the IP to a `.env` file using `react-native-dotenv` for easier config management.
 
 ---
 
-### 🔄 API Example
+###  API Example
 
 #### POST `/api/shorten/`
 **Request:**
